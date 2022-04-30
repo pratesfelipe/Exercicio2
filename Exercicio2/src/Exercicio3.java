@@ -16,6 +16,18 @@ public class Exercicio3 {
 //		que a nota para aprovação deverá ser maior ou igual a 7. 
 
 		Scanner teclado = new Scanner(System.in);
+		
+		
+		
+		 int respostas;
+		 
+		System.out.println("Escreva as respostas das perguntas em ordem de 1 ao 10 ");
+	    respostas = teclado.nextInt();
+
+}
+    public static int[][] MatrizAlunos(){
+    	
+    	Scanner teclado = new Scanner(System.in);
 		Random gerador = new Random();
 		
 		int alunos;
@@ -30,7 +42,15 @@ public class Exercicio3 {
 		    		 prova[i][j] = gerador.nextInt(5);
 		    	  System.out.print(prova [i][j] + "\t");
 		    	  } System.out.println();
-		     }
-
-}
+		     } return prova;
+    }
+    public static void gabarito() {
+    	Scanner teclado = new Scanner(System.in);
+		
+		 int respostas;
+		 
+		System.out.println("Escreva as respostas das perguntas em ordem de 1 ao 10 ");
+	    respostas = teclado.nextInt();
+    	
+    }
 }
